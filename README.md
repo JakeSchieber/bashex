@@ -11,19 +11,28 @@ As of August 22, 2016 Windows 10 bash has no way to execute exe applications fro
 ### Part 1: Setup basic environment
 
 Here is what you need to do:
-1. Clone this repo into the root level of your C: Drive (the enclosing folder should be called "CmdLovesBash"). 
-2. Add this new CmdLovesBash to your windows PATH
-3. Add the following lines to your ~/.bash_aliases: alias cdexit="/mnt/c/CmdLovesBash/bashLovesCmd.sh
-4. Presto! You can now access 'bashex' from the command line by enterring bashex. You can exit bashex with "exit" you can exit and cd into your current bash working directory with cdexit (the logic behind cdexit is what powers the upcoming magic).
+
+1. Clone this repo into the root level of your C: Drive (the enclosing folder should be called `CmdLovesBash`). 
+1. Add this new CmdLovesBash to your windows PATH
+1. Add the following lines to your `~/.bash_aliases`: 
+
+  ```
+  alias cdexit="/mnt/c/CmdLovesBash/bashLovesCmd.sh
+  ```
+1. Presto! You can now access 'bashex' from the command line by enterring bashex. You can exit bashex with "exit" you can exit and cd into your current bash working directory with cdexit (the logic behind cdexit is what powers the upcoming magic).
 
 ### Part 2: Alias your desired exe commands into the bashex system
 
-In order to execute exe from bash simply add another line into your "~/.bash_aliases . Because I use VS code every day (the application behind my primary frustration) let me use it as my demo exe. VS Code can open your current working directory in cmd.exe with the command "code .", all we need to do is then enter the following line into our aliases file:
-> alias code="/mnt/c/CmdLovesBash/bashLovesCmd.sh code"
+In order to execute exe from bash simply add another line into your `~/.bash_aliases`. Because I use VS code every day (the application behind my primary frustration) let me use it as my demo exe. VS Code can open your current working directory in cmd.exe with the command `code .`, all we need to do is then enter the following line into our aliases file:
+```
+alias code="/mnt/c/CmdLovesBash/bashLovesCmd.sh code"
+```
 
-From now on everytime you enter 'code [args]' into the bash prompt our bashex helper script will be called which will exit bash, cd into your current working directory, execute code (with your desired paramters applied) and then return to your current location in bashex. 
+From now on everytime you enter `code [args]` into the bash prompt our bashex helper script will be called which will exit bash, cd into your current working directory, execute code (with your desired paramters applied) and then return to your current location in bashex. 
 
-Simply add any exe cmd that you desired following the format: 'alias command="/mnt/c/CmdLovesBash/bashLovesCmd.sh command"' to enable the same for your desired command.
+Simply add any exe cmd that you desired following the format: 
+`alias command="/mnt/c/CmdLovesBash/bashLovesCmd.sh command"`
+to enable the same for your desired command.
 
 ## TODO
 
