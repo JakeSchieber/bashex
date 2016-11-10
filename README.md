@@ -15,9 +15,10 @@ Here is what you need to do:
 1. Clone this repo into the root level of your C: Drive (the enclosing folder should be called `CmdLovesBash`). 
 1. Add this new CmdLovesBash to your windows PATH
 1. Add the following lines to your `~/.bash_aliases`: 
-```
-alias cdexit="/mnt/c/CmdLovesBash/bashLovesCmd.sh
-```
+
+  ```
+  alias cdexit="/mnt/c/CmdLovesBash/bashLovesCmd.sh
+  ```
 1. Presto! You can now access 'bashex' from the command line by enterring bashex. You can exit bashex with "exit" you can exit and cd into your current bash working directory with cdexit (the logic behind cdexit is what powers the upcoming magic).
 
 ### Part 2: Alias your desired exe commands into the bashex system
