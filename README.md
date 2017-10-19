@@ -4,7 +4,9 @@ There once was a little boy named cmd.exe and a little girl named bash... Window
 
 ## Executing .exe from bash
 
-As of August 22, 2016 Windows 10 bash has no way to execute exe applications from the command line. If you wish to run an exe app from your current working directory in bash you must exit, cd into your former location, run your exe and then start bash up again. This is annoying AF and today we fix this. What if the process could be automated and allow for the pseudo-execution of exe in bash powered by cmd.exe?
+> **NOTE:** WSL in Windows 10 Creators Update (version 1703) can natively launch Windows programs from bash. You can use `bashex` if you want to use WSL on Windows 10 Anniversary Update (version 1607).
+
+The initial versions of Windows Subsystem for Linux (WSL) had no way to execute `.exe` applications from the bash command line. If you wish to run an exe app from your current working directory in bash you must exit, cd into your former location, run your exe and then start bash up again. This was annoying and this project was intended to fix it. 
 
 ## Setup
 
